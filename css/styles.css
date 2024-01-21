@@ -692,7 +692,7 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #FFFFFF;
 cursor: pointer;
-background-color: #4D5AE5
+background-color: #4D5AE5;
 border: none; 
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -764,7 +764,7 @@ border-radius: 4px;
 border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 background-color: transparent;
 outline: transparent;
-border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment-text:focus {
@@ -783,11 +783,12 @@ align-items: center;
 }
 
 .modal-hidden-icon {
-   display: inline-flex;
+  display: inline-flex;
   width: 16px;
+  margin-right: 8px;
   height: 16px;
   border: 1px solid rgba(46, 57, 66, 0.4);
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-text {
@@ -812,8 +813,69 @@ justify-content: center;
 fill: transparent;
 }
 
-.modal-hidden-icon:checked {
+.modal-hidden-icon:checked + {
   background-color: rgba(64, 75, 191, 1);
   border: none;
  fill: #F4F4FD;
+}
+
+.check-input:checked .modal-hidden-icon {
+  border: 0;
+  fill: #f4f4fd;
+}
+
+.subscribe-footer {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.label-footer {
+  gap: 24px;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;  
+}
+
+.footer-input ::placeholder {
+  color: #ffffff;
+}
+
+.button-subscribe {
+  min-width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-icon-frame {
+  margin-left: 16px;
 }

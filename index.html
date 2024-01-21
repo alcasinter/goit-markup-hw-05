@@ -381,16 +381,22 @@
               </svg></a></li>
         </ul>
       </div>
-      <form class="footer-form">
-        <label for="email" class="footer-label">Subscribe</label>
-        <input type="email" name="footer-email" class="footer-input" placeholder="E-mail"><button type="submit"
-          class="button-subscribe">
-          <span>Subscribe</span>
-        </button>
-      </form>
+      <div class="footer-email-section">
+        <p class="subscribe-footer">Subscribe</p>
+        <form class="footer-form">
+          <label for="email" class="label-footer">
+            <input type="email" name="footer-email" class="footer-input" for="email" placeholder="E-mail" /><button
+              type="submit" class="button-subscribe" for="email">
+              Subscribe<svg width="24" height="24" class="footer-icon-frame">
+                <use href="./images/icons.svg#icon-frame-3"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
+      </div>
     </div>
   </footer>
-  <div class="backdrop is-open">
+  <div class="backdrop ">
     <div class="modal">
       <button type="button" class="modal-close-btn"><svg class="icon-close-black" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
@@ -431,10 +437,10 @@
             placeholder="Text input"></textarea>
         </div>
         <div class="modal-field"><input type="checkbox" id="user-privacy" value="true" name="user-privacy"
-            class="check-input visually-hidden" value="tru" />
-          <label for="policy" for="user-privacy" class="check-text"><span class="modal-hidden-icon"><svg
-                class="check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-vector"></use>
+            class="check-input visually-hidden" />
+          <label for="user-privacy" class="check-text"><span class="modal-hidden-icon"><svg class="check-icon"
+                width="10" height="8">
+                <use href="./images/icons.svg#icon-vector" />
               </svg></span> I accept the terms and conditions of the <a class="privacy-text" href="">Privacy
               Policy</a></label>
         </div>
