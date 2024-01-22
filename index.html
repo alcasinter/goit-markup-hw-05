@@ -387,7 +387,7 @@
           <label for="footer-input" class="footer-label">
             <input id="footer-input" name="footer-input" type="email" placeholder="E-mail" class="input-footer">
           </label>
-          <button class="button-subscribe">Subscribe <svg width="24" height="24" class="icon-footer">
+          <button type="submit" class="button-subscribe">Subscribe <svg width="24" height="24" class="icon-footer">
               <use href="./images/icons.svg#icon-frame-3"></use>
             </svg></button>
         </form>
@@ -430,18 +430,17 @@
           </div>
         </div>
         <div class="modal-comment-form">
-          <label for="user-comment">Comment</label>
+          <label for="user-comment" class="label-modal">Comment</label>
           <textarea name="user-comment" id="user-comment" placeholder="Text input" class="modal-textarea"></textarea>
         </div>
         <div class="check-modal">
           <input type="checkbox" id="user-privacy" class="checkbox-modal visually-hidden" value="true"
             name="user-privacy">
-          <span class="span-modal">
-            <svg width="10" height="8" class="icon-modal-span">
-              <use href="./images/icons.svg#icon-vector"></use>
-            </svg>
-          </span>
-          <label for="user-privacy" class="modal-privacy">I accept the terms and
+          <label for="user-privacy" class="modal-privacy"><span class="span-modal">
+              <svg width="10" height="8" class="icon-modal-span">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>I accept the terms and
             conditions of the
             <a href="" class="modal-link">Privacy Policy</a>
           </label>

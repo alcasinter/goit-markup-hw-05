@@ -836,3 +836,7 @@ border: none;
   margin-top: 24px;
   margin-left: 95px;
 }
+
+.user-comment-modal {
+color: var(--LIGHT-SLATE, #8E8F99);
+}
