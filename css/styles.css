@@ -727,7 +727,6 @@ border: none;
   letter-spacing: 0.04em;
   color: #8E8F99;
   display: block;
-  margin-bottom: 4px;
 }
 
 .icon-modal {
@@ -742,6 +741,7 @@ border: none;
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 4px;
 }
 
 .input-modal:focus {
@@ -778,6 +778,7 @@ border: none;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  margin-top: 4px;
 }
 
 .modal-textarea:focus {
@@ -788,7 +789,7 @@ border: none;
   margin-bottom: 24px;
 }
 
-.checkbox-modal:checked .span-modal {
+.checkbox-modal:checked + .modal-privacy .span-modal {
   background-color: #404BBF;
   border: none;
   fill: #f4f4fd;
@@ -840,3 +841,4 @@ border: none;
 .user-comment-modal {
 color: var(--LIGHT-SLATE, #8E8F99);
 }
+
