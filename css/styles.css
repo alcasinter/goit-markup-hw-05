@@ -829,6 +829,7 @@ border: none;
 .modal-link {
   color: #4d5ae5;
   text-decoration: underline;
+  margin-left: 4px;
 }
 
 .button-send {
